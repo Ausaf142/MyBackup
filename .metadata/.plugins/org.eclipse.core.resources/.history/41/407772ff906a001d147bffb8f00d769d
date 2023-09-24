@@ -1,0 +1,16 @@
+package LastPreparation;
+
+import String.DuplicateRemove;
+
+public class Duplicates {
+	public static void main(String[] args) {
+		String repeated = "aabbccdd";
+		String s=  " ";
+		for(int i=0; i<repeated.length();i++) {
+			char dupl = repeated.charAt(i);
+		          System.out.println(dupl);		        	
+		        	s = s+ dupl;
+		     StringBuilder sb = new StringBuilder(repeated);
+		   
+		        }
+	}}

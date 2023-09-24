@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-10T14:52:33 IST" name="Default suite" finished-at="2023-09-10T14:52:33 IST" duration-ms="63">
+    <groups>
+      <group name="smoke">
+        <method signature="Flag.flag3()[pri:0, instance:TestNG.Flag@16610890]" name="flag3" class="TestNG.Flag"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-09-10T14:52:33 IST" name="Default test" finished-at="2023-09-10T14:52:33 IST" duration-ms="63">
+      <class name="TestNG.Flag">
+        <test-method signature="flag5()[pri:-1, instance:TestNG.Flag@16610890]" started-at="2023-09-10T14:52:33 IST" name="flag5" finished-at="2023-09-10T14:52:33 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flag5 -->
+        <test-method signature="flag1()[pri:0, instance:TestNG.Flag@16610890]" started-at="2023-09-10T14:52:33 IST" name="flag1" finished-at="2023-09-10T14:52:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flag1 -->
+        <test-method signature="flag1()[pri:0, instance:TestNG.Flag@16610890]" started-at="2023-09-10T14:52:33 IST" name="flag1" finished-at="2023-09-10T14:52:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flag1 -->
+        <test-method signature="flag2()[pri:0, instance:TestNG.Flag@16610890]" started-at="2023-09-10T14:52:33 IST" name="flag2" finished-at="2023-09-10T14:52:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flag2 -->
+        <test-method signature="flag3()[pri:0, instance:TestNG.Flag@16610890]" started-at="2023-09-10T14:52:33 IST" name="flag3" finished-at="2023-09-10T14:52:33 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flag3 -->
+        <test-method signature="flag4()[pri:0, instance:TestNG.Flag@16610890]" started-at="2023-09-10T14:52:33 IST" name="flag4" finished-at="2023-09-10T14:52:33 IST" depends-on-methods="TestNG.Flag.flag5" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flag4 -->
+      </class> <!-- TestNG.Flag -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,13 @@
+package DiffrentWaysToPost;
+
+import org.testng.annotations.Test;
+
+public class PostUsingFileMe {
+	@Test
+	public void postFile() {
+		
+		
+		
+	}
+
+}

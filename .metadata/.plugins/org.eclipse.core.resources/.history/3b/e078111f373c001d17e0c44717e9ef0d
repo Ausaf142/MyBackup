@@ -1,0 +1,30 @@
+package DiffrentWaysToPost;
+
+import org.testng.annotations.Test;
+
+import Practice_POJO_SerDes.MineLibrary;
+import io.restassured.http.ContentType;
+
+import static io.restassured.RestAssured.*;
+
+import java.util.Random;
+
+public class PostUsingPojoMe {
+	@Test
+	public void post() {
+		baseURI="http://localhost";
+		port=8084;
+		Random random=new Random();
+		int ran = random.nextInt(500);
+		MineLibrary mlib=new MineLibrary("adeeb","hafiz","bano","zishu","murphy",789);
+		given()
+		.body(mlib)
+		.contentType(ContentType.JSON)
+		.when()
+		.post("/addProject")
+		.then()
+		.log().all();
+		
+	}
+
+}

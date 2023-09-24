@@ -1,0 +1,31 @@
+package Practice;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+
+public class KabaddiDynamicPath {
+	public static void main(String[] args) throws InterruptedException {
+		 String team = " Puneri Paltan";
+		System.out.println("Team name is"+team);
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		ChromeOptions cs = new ChromeOptions();
+		cs.addArguments("--disable-notification");
+		driver.get("https://www.sportskeeda.com/go/pro-kabaddi/points-table");
+		
+	WebElement played = driver.findElement(By.xpath("//a[text()='"+team+"']/ancestor::div[@class='one-table-row stats-a  green ']/descendant::div[@class='matches-played']"));
+		System.out.println( "Played by team is:"+played.getText());
+		WebElement won = driver.findElement(By.xpath("//a[text()='Puneri Paltan']/ancestor::div[@class='one-table-row stats-a  green ']/descendant::div[@class='matches-won']"));
+		System.out.println("won by the Team :"+won);
+		//a[text()='Puneri Paltan']/ancestor::div[@class="one-table-row stats-a  green "]/descendant::div[@class="matches-played"]
+	}
+	
+}

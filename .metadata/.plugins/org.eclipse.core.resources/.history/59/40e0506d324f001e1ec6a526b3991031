@@ -1,0 +1,49 @@
+package Practice;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class TestNg {
+	
+	
+@BeforeSuite
+public void BS() {
+	System.out.println("Before Suit");
+}
+@BeforeTest
+public void BT() {
+	System.out.println("Before Test");
+}
+@BeforeClass
+public void BC() {
+	System.out.println("Before class");
+}
+@BeforeMethod
+public void BM() {
+	System.out.println("Before method");
+}
+@Test
+public void Test() {
+	System.out.println("Test");
+}
+@AfterMethod
+public void AM() {
+	System.out.println("After Method");
+}
+@BeforeTest
+public void AC() {
+	System.out.println("After class");
+}
+@BeforeClass
+public void AT() {
+	System.out.println("After Test");
+}
+@BeforeMethod
+public void AS() {
+	System.out.println("After Suit");
+}
+}
